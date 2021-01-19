@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("./fonts/Avenir.otf") format("otf");
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url("./fonts/Avenir-Roman.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Gordita";
+    src: url("./fonts/GorditaRegular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Gordita";
+    font-weight: 500;
+    src: url("./fonts/GorditaBold.ttf") format("ttf");
+}
+
+:root {
+    --blue-color: #008cdd;
+}
+
+body {
+    font-size: 12px;
+    font-family: Avenir-Roman, Helvetica, sans-serif;
+}
+
+.flex-box {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+label {
+    font-family: Avenir, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.19px
+}
+
+label > input[type="checkbox"] {
+    margin-left: 0;
+}
+
+.box {
+    padding: 20px;
+}
+
+.box-header {
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 5px;
+    font-family: Gordita, Helvetica, sans-serif;
+}
+
+.box-header:after {
+    letter-spacing: 0.19px;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #000;
+    min-width: 72px;
+    left: 0;
+}
+
+.main-header .box-header:after {
+    border-color: var(--blue-color);
+}
+
+.white {
+    color: #fff;
+}
+.center {
+    margin: auto;
+}
+
+a {
+    color: var(--blue-color);;
+    cursor: pointer;
+}
+.hovered {
+    border-bottom: 1px solid;
+}
+
+.specs {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.specs .label {
+    font-weight: bold;
+    width: 150px;
+}
+
+.specs > div {
+    margin-bottom: 10px;
+}
